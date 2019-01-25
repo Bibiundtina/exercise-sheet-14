@@ -1,8 +1,5 @@
 package de.unistuttgart.iste.rss.pse.exercisesheet14.streams;
 
-import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class StreamsAndFilterExercise {
 

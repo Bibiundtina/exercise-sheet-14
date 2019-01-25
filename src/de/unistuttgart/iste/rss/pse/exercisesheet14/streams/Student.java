@@ -1,6 +1,5 @@
 package de.unistuttgart.iste.rss.pse.exercisesheet14.streams;
 
-import java.security.KeyException;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.HashMap;
@@ -80,15 +79,11 @@ public class Student {
 	/**
 	 * Returns the exam for a given Name.
 	 * 
-	 * @param examTag name of the exam
+	 * @param examTag name of the exam 
 	 * @return exam for given key
-	 * @throws KeyException if examTag is not known for the student
+	 * 
 	 */
-	public Exam getExam(final String examTag) throws KeyException {
-		if(!writtenExams.containsKey(examTag)) {
-			throw new KeyException("Key not found");
-		}
-		
+	public Exam getExam(final String examTag){
 		return writtenExams.get(examTag);
 	}
 
